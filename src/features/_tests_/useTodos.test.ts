@@ -1,8 +1,8 @@
 import { renderHook } from "@testing-library/react";
 import { waitFor } from "@testing-library/react";
 import axios from "axios";
-import { useTodos } from "./useTodos";
-
+import { useTodos } from "../todos/hooks/useTodos";
+import { vi } from "vitest";
 vi.mock("axios");
 const mockedAxios = axios as jest.Mocked<typeof axios>;
 

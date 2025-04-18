@@ -1,5 +1,5 @@
 import { render, screen, fireEvent, act } from "@testing-library/react";
-import EditTodoModal from "./EditTodoModal";
+import EditTodoModal from "../todos/components/EditTodoModal";
 import { vi } from "vitest";
 
 const mockTodo = { id: 1, title: "Old Title", completed: false };

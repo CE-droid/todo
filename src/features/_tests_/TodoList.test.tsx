@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import TodoList from "./TodoList";
+import TodoList from "../todos/components/TodoList";
 import { vi } from "vitest";
 
 // Mock useTodos hook
-vi.mock("../hooks/useTodos", () => ({
+vi.mock("../todos/hooks/useTodos", () => ({
   useTodos: () => ({
     todos: [
       { id: 1, title: "Test Todo 1", completed: false },
@@ -19,7 +19,7 @@ vi.mock("../hooks/useTodos", () => ({
 }));
 
 // Mock useTheme hook
-vi.mock("../hooks/ThemeContext", () => ({
+vi.mock("../todos/hooks/ThemeContext", () => ({
   useTheme: () => ({
     isDarkMode: false,
     toggleDarkMode: vi.fn(),
