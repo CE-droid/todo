@@ -15,7 +15,7 @@ A scalable and performant Todo Manager application built with **React**, featuri
 
 ##  Live Demo
 
-[View Live App (Vercel/Netlify)](https://your-deployment-link.com)
+[View Live App (Vercel)](https://todolist-beta-five-56.vercel.app/)
 
 ---
 
